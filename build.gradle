@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'at.kaisertorian'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.discord4j:discord4j-core:3.3.0'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+application {
+    mainClass = 'at.kaisertorian.chrysotile.Chrysotile'
+}
